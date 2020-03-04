@@ -12,7 +12,7 @@ const MorseEmitterEncrypted = require("./modules/MorseEmitterEncrypted");
 const morse_Char = require("./data/moorse-code-reverse.json");
 const morse_Char_Code = require("./data/morse-code.json"); //original
 
-let morse_emitter = new MorseEmitter("Cats and Dofs !@.,?!()");
+let morse_emitter = new MorseEmitter("(h3Y, C4ts And D0g5 are pa1S!)");
 let morse_character = "";
 let place = 0;
 
@@ -37,4 +37,4 @@ morse_emitter.on("break", (spec) =>
 });
 
 
-morse_emitter.start();
+//morse_emitter.start();

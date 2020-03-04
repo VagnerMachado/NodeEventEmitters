@@ -27,6 +27,7 @@ class MorseEmitter extends EventEmitter
 	{
 		super();
 		this.data = data;
+		this.data = this.data.replace(/\s/g,""); //remove all spaces
 	}	
 	 //starts to encryption and decryption of morse code.
 	 start()
