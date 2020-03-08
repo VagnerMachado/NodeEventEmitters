@@ -11,6 +11,7 @@ For that, it instantiates a MorseEmitter object and turns on listers for:
 		3.1 - It prints the character onto console.
 		3.2 - Resets morse_character to ""
 	
+	Vagner
 =======================
 */
 const MorseEmitter = require("./modules/MorseEmitter");
@@ -18,7 +19,7 @@ const MorseEmitterEncrypted = require("./modules/MorseEmitterEncrypted");
 const morse_Char = require("./data/moorse-code-reverse.json");
 const morse_Char_Code = require("./data/morse-code.json"); //original
 
-let morse_emitter = new MorseEmitter("(h3Y, C4ts And D0g5 are pa1S!)");
+let morse_emitter = new MorseEmitter("h3Y 7h3re cH13F! C4ts AnD D0g5 are pa1S.. (50me7IM35!)");
 let morse_character = "";
 let place = 0;
 
