@@ -3,7 +3,7 @@
 03 - Price Notifications - index.js
 =======================
 Student ID: 23651127
-Comment (Required): This is th emain driver for the price notification application. 
+Comment (Required): This is the main driver for the price notification application. 
 It follows these steps to accomplish the requirements:
 1 - import needed modules
 2 - instantiate all the stock objects based on .json data and insert them into portfolio
@@ -50,7 +50,7 @@ for(i in portfolio)
 		if(portfolio[i]["ticker"] === stock_alerts[j]["ticker"])
 			alerts.push(new PriceEmitter(portfolio[i], stock_alerts[j]["target_price"], stock_alerts[j]["direction"]));
 	}
-	
+
 //add a listener to price_alert to all the PriceEmitter objects
 alert_location = current_line;
 for(i in alerts)
@@ -61,9 +61,9 @@ for(i in alerts)
 						process.stdout.cursorTo(0, alert_location++);
 						console.log(`Price Alert: (${ticker}: $${price}) went ${direction} $${target_price} on ${mm_dd}`);
 					});
-}	
-	
-// handle a newday event	
+}
+
+// handle a newday event
 day_emitter.on("newday", function(spec){
 	let {mm_dd} = spec;
 	process.stdout.cursorTo(0, 0);
@@ -74,19 +74,3 @@ day_emitter.on("newday", function(spec){
 
 //start the new day emiision and therefore the app itself
 day_emitter.start();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

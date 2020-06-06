@@ -17,7 +17,8 @@ class Stock extends EventEmitter {
 		let new_price = Stock.round(price * (1 + daily_change));
 		return Math.max(new_price, 0);
 	}
-	static round(num){
+	static round(num)
+	{
 		return Math.round((num + Number.EPSILON) * 100) / 100;
 	}
 }

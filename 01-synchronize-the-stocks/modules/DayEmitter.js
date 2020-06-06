@@ -1,5 +1,6 @@
 const EventEmitter = require('events');
-class DayEmitter extends EventEmitter {
+class DayEmitter extends EventEmitter
+{
 	constructor(update_time = 240) {
 		super();
 		this.day = new Date();
